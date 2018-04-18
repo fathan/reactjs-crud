@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+import HelloMessage from './views/Learning/HelloMessage';
+import Timer from './views/Learning/Timer';
+import TodoApp from './views/Learning/TodoApp';
+import MarkdownEditor from "./views/Learning/MarkdownEditor";
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +18,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <hr/>
+        <HelloMessage name="Fathan Rohman in React.js"/>
+        <Timer/>
+        <TodoApp/>
+        <MarkdownEditor/>
       </div>
     );
   }
